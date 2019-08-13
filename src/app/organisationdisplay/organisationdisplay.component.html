@@ -82,7 +82,7 @@
     </div>
     <div class="modal-body">
         <!-- <div class='col-6'> -->
-      <form >
+      <form (ngSubmit)="onAddOrg(f)" #f="ngForm" >
 
         <div class="container">
           <div class="row">
@@ -185,7 +185,7 @@
           </div>
           <br/>
 <div>
-              <button type="submit" (click)="onAddOrg()"  >Submit</button>&nbsp;&nbsp;
+              <button type="submit"  >Submit</button>&nbsp;&nbsp;
 
 
               <button type="button" aria-label="Close" (click)="modal.dismiss('Cross click')">Cancel</button>

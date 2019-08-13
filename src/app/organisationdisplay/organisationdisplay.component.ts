@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Organisation } from './organisation';
-import { OrganisationdataService } from './organisationdata.service';
+
 
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
@@ -81,7 +81,7 @@ export class OrganisationdisplayComponent implements OnInit {
   }
 
 // Add Method
-  onAddOrg() {
+  onAddOrg(f) {
       this.arr.push(new Organisation(this.org_name,this.org_desc,this.org_add1, this.org_add2,this.org_city,this.org_state,this.org_zip,this.org_country,this.org_phone1,this.org_phone2,this.org_website,this.org_fax));
     alert("Added Successfully");
 
